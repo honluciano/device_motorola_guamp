@@ -77,10 +77,7 @@
     <!-- Should the pinner service pin the Home application? -->
      <bool name="config_pinnerHomeApp">true</bool>
 
-    <!-- Height of the status bar -->
-    <dimen name="status_bar_height_portrait">40dp</dimen>
-    <dimen name="status_bar_height_landscape">28dp</dimen>
-
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- The bounding path of the cutout region of the main built-in display.
          Must either be empty if there is no cutout region, or a string that is parsable by
          {@link android.util.PathParser}.
@@ -96,7 +93,15 @@
                 <string ...>M -5,0 L -5,10 L 5,10 L 5,0 Z @dp</string>
          @see https://www.w3.org/TR/SVG/paths.html#PathData
          -->
-    <string translatable="false" name="config_mainBuiltInDisplayCutout">M -903,0 H -1080 V 90 H -903 V 0 Z@right</string>
+    <string translatable="false" name="config_mainBuiltInDisplayCutout">
+        M -140 0
+        C -100 0 -82 4 -56 47
+        C -44 67 -23 80 0 80
+        C 23 80 44 67 56 47
+        C 82 4 100 0 140 0
+        L -140 0
+        Z
+    </string>
 
     <!-- Like config_mainBuiltInDisplayCutout, but this path is used to report the
          one single bounding rect per device edge to the app via
@@ -105,8 +110,19 @@
          config_mainBuiltInDisplayCutout
          -->
     <string translatable="false" name="config_mainBuiltInDisplayCutoutRectApproximation">
-        M -903,0 H -1080 V 90 H -903 V 0 Z@right
+        M 74 80
+        C 35.0642426 79.9994271 10.3980334 79.9993316 0.00137259186 79.999713
+        C -10.3961724 80.0000955 -35.0632966 80.000191 -74 80
+        L -74 0
+        L 74 0
+        L 74 80
+        Z
     </string>
+
+    <!-- Whether the display cutout region of the main built-in display should be forced to
+         black in software (to avoid aliasing or emulate a cutout that is not physically existent).
+     -->
+    <bool name="config_fillMainBuiltInDisplayCutout">true</bool>
 
     <!-- Default list of files pinned by the Pinner Service -->
     <string-array translatable="false" name="config_defaultPinnerServiceFiles">

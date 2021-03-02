@@ -15,9 +15,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/p404_cmi.mk
+    $(LOCAL_DIR)/p404_lime.mk
 
 COMMON_LUNCH_CHOICES := \
-    p404_cmi-user \
-    p404_cmi-userdebug \
-    p404_cmi-eng
+    p404_lime-user \
+    p404_lime-userdebug \
+    p404_lime-eng
