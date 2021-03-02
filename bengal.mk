@@ -159,7 +159,7 @@ TARGET_COMMON_QTI_COMPONENTS := \
 
 # Ramdisk
 PRODUCT_PACKAGES += \
-    init.safailnet.rc
+    init.recovery.qcom.rc
 
 # Telephony
 PRODUCT_PACKAGES += \
