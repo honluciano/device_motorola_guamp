@@ -23,17 +23,16 @@ TARGET_GAPPS_ARCH := arm64
 $(call inherit-product, device/xiaomi/lime/bengal.mk)
 
 # Inherit common 404 configuration
-$(call inherit-product, vendor/404/configs/common.mk)
 
 $(call inherit-product, vendor/google/pixel/config.mk)
 $(call inherit-product, vendor/google/gms/gapps.mk)
 
 # Override build properties
-PRODUCT_NAME := p404_lime
-PRODUCT_DEVICE := lime
-PRODUCT_BRAND := Xiaomi
-PRODUCT_MODEL := Redmi 9T
-PRODUCT_MANUFACTURER := Xiaomi
+PRODUCT_NAME := lineage_guamp
+PRODUCT_DEVICE := guamp
+PRODUCT_BRAND := Motorola
+PRODUCT_MODEL := g9 play
+PRODUCT_MANUFACTURER := Motorola
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRIVATE_BUILD_DISC="redfin-user 11 RQ1A.210105.003 7005429 release-keys"
