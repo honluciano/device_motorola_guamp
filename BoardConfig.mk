@@ -23,7 +23,7 @@
 
 BUILD_BROKEN_DUP_RULES := true
 
-DEVICE_PATH := device/xiaomi/lime
+DEVICE_PATH := device/motorola/guamp
 
 # Architecture
 TARGET_ARCH := arm64
@@ -45,7 +45,7 @@ BOARD_ANT_WIRELESS_DEVICE := "qualcomm-hidl"
 DEXPREOPT_GENERATE_APEX_IMAGE := true
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := lime
+TARGET_OTA_ASSERT_DEVICE := guamp
 
 # Audio
 USE_CUSTOM_AUDIO_POLICY := 1
